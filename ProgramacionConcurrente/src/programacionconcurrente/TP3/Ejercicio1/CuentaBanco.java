@@ -16,11 +16,11 @@ public class CuentaBanco {
     public CuentaBanco() {
     }
 
-    public int getBalance() {
+    public synchronized int getBalance() {
         return balance;
     }
 
-    public void retiroBancario(int retiro) {
+    public synchronized void retiroBancario(int retiro) {
         balance = balance - retiro;
     }
 }
