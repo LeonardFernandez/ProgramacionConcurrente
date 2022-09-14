@@ -19,8 +19,13 @@ public class Actividad {
         enUso = false;
     }
 
-    public synchronized void usar() throws InterruptedException {
+    public synchronized boolean usar() throws InterruptedException {
+        boolean uso=false;
+        if(!enUso){
             enUso = true;
+            uso=true;
+        }
+        return uso;
     }
 
     public synchronized void dejarDeUsar() {
@@ -31,7 +36,7 @@ public class Actividad {
         return nombre;
     }
     
-    public boolean getEnUso(){
+    public synchronized boolean getEnUso(){
         return enUso;
     }
 }

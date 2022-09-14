@@ -29,24 +29,22 @@ public class Hamster extends Thread {
     public void realizarActividades() throws InterruptedException {
         //Interprete que las actividades deben hacerse una detras de otra
         //Actividad 1
-        while (!actv1.getEnUso()) {
-            actv1.usar();
+
+        if (actv1.usar()) {
             System.out.println("El hamster " + nombre + " ha comenzado ha relizar la Actividad " + actv1.getNombre());
             Thread.sleep(1000);
             actv1.dejarDeUsar();
             System.out.println("El hamster " + nombre + " ha dejado de relizar la Actividad " + actv1.getNombre());
         }
         //Actividad 2
-        while (!actv2.getEnUso()) {
-            actv2.usar();
+        if (actv2.usar()) {
             System.out.println("El hamster " + nombre + " ha comenzado ha relizar la Actividad " + actv2.getNombre());
             Thread.sleep(1000);
             actv2.dejarDeUsar();
             System.out.println("El hamster " + nombre + " ha dejado de relizar la Actividad " + actv2.getNombre());
         }
         //Actividad 3
-        while (!actv3.getEnUso()) {
-            actv3.usar();
+        if (actv3.usar()) {
             System.out.println("El hamster " + nombre + " ha comenzado ha relizar la Actividad " + actv3.getNombre());
             Thread.sleep(1000);
             actv3.dejarDeUsar();
@@ -58,8 +56,10 @@ public class Hamster extends Thread {
         for (int j = 0; j <= 3; j++) {
             try {
                 realizarActividades();
+
             } catch (InterruptedException ex) {
-                Logger.getLogger(Hamster.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Hamster.class
+                        .getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

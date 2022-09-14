@@ -14,11 +14,11 @@ public class Jaula {
         Actividad Plato = new Actividad("comer");
         Actividad Rueda = new Actividad("hacer ejercicio");
         Actividad Hamaca = new Actividad("descansar");
-        Hamster[] colHamster = new Hamster[20];
-        for(int j=0; j<20; j++){
+        Hamster[] colHamster = new Hamster[8];
+        for(int j=0; j<8; j++){
             colHamster[j] = new Hamster(String.valueOf(j) ,Plato,Rueda,Hamaca);
         }
-        for(int j=0; j<20; j++){
+        for(int j=0; j<8; j++){
             colHamster[j].start();
         }
     }
