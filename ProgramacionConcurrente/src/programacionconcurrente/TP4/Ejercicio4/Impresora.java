@@ -19,7 +19,7 @@ public class Impresora {
         nombre=unNombre;
     }
     
-    public void imprimir(int unNombre, int numHoja) throws InterruptedException{
+    public imprimir(int unNombre, int numHoja) throws InterruptedException{
         //adquirir
         semaforo.acquire();
         //liberar
@@ -27,4 +27,7 @@ public class Impresora {
         semaforo.release();
     }
     
+    public boolean intentarImprimir(){
+        //trai acuaier
+    }
 }

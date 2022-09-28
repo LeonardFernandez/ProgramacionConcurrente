@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  */
 public class Usuario extends Thread {
     int nombre;
-    Impresora imp;
+    Impresora[] imp;
     
     public Usuario(int name, Impresora unaImpresora){
         nombre=name;
@@ -23,7 +23,10 @@ public class Usuario extends Thread {
     }
     
     public void realizarImpresion(int numHoja) throws InterruptedException{
-        imp.imprimir(nombre, numHoja);
+        //Intentar imprimir
+        imp.intenrarImprimir(nombre, numHoja);
+        //Si no
+        
     }
     
     public void run(){
