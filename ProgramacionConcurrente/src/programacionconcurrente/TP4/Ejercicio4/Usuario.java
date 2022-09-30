@@ -14,23 +14,32 @@ import java.util.logging.Logger;
  * @author leonard.fernandez
  */
 public class Usuario extends Thread {
+
     int nombre;
     Impresora[] imp;
-    
-    public Usuario(int name, Impresora unaImpresora){
-        nombre=name;
-        imp=unaImpresora;
+
+    public Usuario(int name, Impresora[] unaImpresora) {
+        nombre = name;
+        imp = unaImpresora;
     }
-    
-    public void realizarImpresion(int numHoja) throws InterruptedException{
+
+    public void realizarImpresion(int numHoja) throws InterruptedException {
+        int cantImp=imp.length-1;
+        boolean acceso = false;
         //Intentar imprimir
-        imp.intenrarImprimir(nombre, numHoja);
-        //Si no
-        
+        int j = 0;
+        while (!acceso && j<=cantImp) {
+            acceso=imp[j].intentarImprimir(nombre, numHoja);
+            j++;
+        }
+        if(cantImp==j){
+            //Aleatorio
+            imp[2].imprimir(nombre, numHoja);
+        }
     }
-    
-    public void run(){
-        for(int j=0; j<10; j++){
+
+    public void run() {
+        for (int j = 0; j < 10; j++) {
             try {
                 realizarImpresion(j);
             } catch (InterruptedException ex) {

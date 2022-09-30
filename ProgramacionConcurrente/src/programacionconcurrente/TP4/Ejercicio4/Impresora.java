@@ -12,14 +12,14 @@ import java.util.concurrent.Semaphore;
  * @author leonard.fernandez
  */
 public class Impresora {
-    String nombre;
+    int nombre;
     Semaphore semaforo = new Semaphore(1);
     
-    public Impresora(String unNombre){
+    public Impresora(int unNombre){
         nombre=unNombre;
     }
     
-    public imprimir(int unNombre, int numHoja) throws InterruptedException{
+    public void imprimir(int unNombre, int numHoja) throws InterruptedException{
         //adquirir
         semaforo.acquire();
         //liberar
@@ -27,7 +27,14 @@ public class Impresora {
         semaforo.release();
     }
     
-    public boolean intentarImprimir(){
-        //trai acuaier
+    public boolean intentarImprimir(int unNombre, int numHoja){
+        boolean acceso=semaforo.tryAcquire();
+        //try acquire
+        if(acceso){
+            //liberar
+            System.out.println("Usuario "+unNombre+" esta imprimiendo la hoja n° " + numHoja);
+            semaforo.release();
+        }
+        return acceso;
     }
 }
