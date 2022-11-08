@@ -18,7 +18,7 @@ public class GestorObservatorio {
         visitantes=0;
         personal=0;
         investigadores=0;
-        sillaR>=0
+        sillaR=0;
     }
     
     public synchronized void entrarVisitante(){
@@ -31,9 +31,8 @@ public class GestorObservatorio {
     public synchronized void entrarConSilla(){
         while(visitantes>=50 || (personal>=1) || (investigadores>=1)){
             this.wait();
-            sillaR++;
         }
-        if(sillaR>=1){sillaR--;}
+        sillaR++;
         visitantes++;
     }
     
@@ -49,6 +48,22 @@ public class GestorObservatorio {
             this.wait();
             investigadores++;
         }
+    }
+    
+    public synchronized void salirSillaR(){
+        sillaR--;
+    }
+    
+    public synchronized void salirVisitante(){
+        visitantes--;
+    }
+    
+    public synchronized void salirPersonal(){
+        personal--;
+    }
+    
+    public synchronized void salirInvestigador(){
+        investigadores--;
     }
     
     
