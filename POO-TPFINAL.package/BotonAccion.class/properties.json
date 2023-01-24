@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimpleButtonMorph",
+	"category" : "POO-TPFINAL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bloqueAccion"
+	],
+	"name" : "BotonAccion",
+	"type" : "normal"
+}

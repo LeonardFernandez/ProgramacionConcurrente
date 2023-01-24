@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "BorderedMorph",
+	"category" : "POO-TPFINAL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"botCerrar",
+		"botRegistrarUsuario",
+		"botSolicitarPrestamo",
+		"botDevolverPrestamo",
+		"botCambiarMembresia",
+		"botInfoUsuario",
+		"botInfoBiblioteca",
+		"botAgregarBiblio"
+	],
+	"name" : "Visual",
+	"type" : "normal"
+}
