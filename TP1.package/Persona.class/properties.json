@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TP1",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nombre",
+		"apellido",
+		"edad",
+		"enBar"
+	],
+	"name" : "Persona",
+	"type" : "normal"
+}
