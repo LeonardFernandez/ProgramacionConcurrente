@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RubTextFieldMorph",
+	"category" : "POO-TPFINAL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Input",
+	"type" : "normal"
+}

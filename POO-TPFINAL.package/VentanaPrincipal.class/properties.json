@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Ventana",
+	"category" : "POO-TPFINAL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"botRegistrarUsuario",
+		"botSolicitarPrestamo",
+		"botDevolverPrestamo",
+		"botCambiarMembresia",
+		"botInfoUsuario",
+		"botInfoBiblioteca",
+		"botAgregarBiblio",
+		"ventanaRegistroUsuario"
+	],
+	"name" : "VentanaPrincipal",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Ventana",
+	"category" : "POO-TPFINAL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"inNombre",
+		"inApellido",
+		"inDni",
+		"inContra"
+	],
+	"name" : "VentanaRegistroUsuario",
+	"type" : "normal"
+}

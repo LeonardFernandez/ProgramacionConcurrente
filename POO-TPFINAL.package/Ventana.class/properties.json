@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BorderedMorph",
+	"category" : "POO-TPFINAL",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"botCerrar"
+	],
+	"name" : "Ventana",
+	"type" : "normal"
+}
