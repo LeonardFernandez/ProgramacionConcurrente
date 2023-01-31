@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "BorderedMorph",
+	"super" : "Ventana",
 	"category" : "POO-TPFINAL-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"botCerrar",
-		"sistema"
+		"bot"
 	],
-	"name" : "Ventana",
+	"name" : "VentanaSolicitarPrestamo",
 	"type" : "normal"
 }

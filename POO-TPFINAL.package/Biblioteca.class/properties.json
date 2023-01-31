@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-TPFINAL-Modelo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"direccion",
+		"nombre",
+		"telefono",
+		"nombreRepresentante",
+		"colLibro",
+		"colPrestamo",
+		"diasPrestamo"
+	],
+	"name" : "Biblioteca",
+	"type" : "normal"
+}

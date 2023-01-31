@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CheckboxMorph",
+	"category" : "POO-TPFINAL-Uncategorized",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BotonDeSeleccion",
+	"type" : "normal"
+}

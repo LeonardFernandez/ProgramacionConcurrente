@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "BorderedMorph",
-	"category" : "POO-TPFINAL-Vista",
+	"super" : "Object",
+	"category" : "POO-TPFINAL-Modelo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"botCerrar",
-		"sistema"
+		"nombre",
+		"apellido"
 	],
-	"name" : "Ventana",
+	"name" : "Autor",
 	"type" : "normal"
 }

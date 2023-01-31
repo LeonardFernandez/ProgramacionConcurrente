@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Ventana",
-	"category" : "POO-TPFINAL",
+	"category" : "POO-TPFINAL-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -13,7 +13,8 @@
 		"botInfoUsuario",
 		"botInfoBiblioteca",
 		"botAgregarBiblio",
-		"ventanaRegistroUsuario"
+		"ventanaRegistroUsuario",
+		"ventanaSolicitarPrestamo"
 	],
 	"name" : "VentanaPrincipal",
 	"type" : "normal"

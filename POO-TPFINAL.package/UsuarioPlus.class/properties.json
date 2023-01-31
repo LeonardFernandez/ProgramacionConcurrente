@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "BorderedMorph",
-	"category" : "POO-TPFINAL-Vista",
+	"super" : "Usuario",
+	"category" : "POO-TPFINAL-Modelo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"botCerrar",
-		"sistema"
+		"fechaPago",
+		"estaAlDia"
 	],
-	"name" : "Ventana",
+	"name" : "UsuarioPlus",
 	"type" : "normal"
 }

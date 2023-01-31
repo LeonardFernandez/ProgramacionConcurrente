@@ -1,11 +1,7 @@
 initialization
 initialize 
-	|titulo|
 	super initialize .
-	titulo := 'Sistema Gestor de Bibliotecas' asMorph .
-	self addMorph: titulo .
-	titulo position: self position .
-	self addMorph: titulo.
+	self crearTitulo: 'SISTEMA GESTOR DE BIBLIOTECAS'.
 	botRegistrarUsuario := BotonAccion crearConNombre: 'Registrar Usuario' dimension: 200@50 color: Color black . 
 	botSolicitarPrestamo := BotonAccion crearConNombre: 'Solicitar Prestamo' dimension: 200@50 color: Color black.
 	botDevolverPrestamo  := BotonAccion crearConNombre: 'Devolver Prestamo' dimension: 200@50 color: Color black.
@@ -28,3 +24,4 @@ initialize
 	botInfoBiblioteca  position: botInfoUsuario position+(0@(75)).
 	botAgregarBiblio  position: botInfoBiblioteca position+(0@(75)).
 	botRegistrarUsuario mouseAction: [ ventanaRegistroUsuario := VentanaRegistroUsuario new ].
+	botSolicitarPrestamo mouseAction: [ ventanaSolicitarPrestamo := VentanaSolicitarPrestamo new ].

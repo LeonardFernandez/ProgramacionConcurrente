@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-TPFINAL-Modelo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colUsuario",
+		"colBiblioteca",
+		"colAutor"
+	],
+	"name" : "Sistema",
+	"type" : "normal"
+}

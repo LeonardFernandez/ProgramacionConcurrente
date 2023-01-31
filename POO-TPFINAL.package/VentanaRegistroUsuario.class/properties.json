@@ -1,16 +1,19 @@
 {
 	"commentStamp" : "",
 	"super" : "Ventana",
-	"category" : "POO-TPFINAL",
+	"category" : "POO-TPFINAL-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"botRegistrar",
+		"seleccionPlus",
 		"inNombre",
 		"inApellido",
 		"inDni",
-		"inContra"
+		"inContra",
+		"textoExito",
+		"textoError"
 	],
 	"name" : "VentanaRegistroUsuario",
 	"type" : "normal"
